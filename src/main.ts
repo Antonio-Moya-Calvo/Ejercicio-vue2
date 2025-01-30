@@ -1,4 +1,6 @@
-import './assets/main.css'
+import '@/assets/styles.css/reset.scss'
+import '@/assets/styles.css/variables.scss'
+import '@fontsource-variable/grandstander'
 import '@fontsource/poppins';
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
