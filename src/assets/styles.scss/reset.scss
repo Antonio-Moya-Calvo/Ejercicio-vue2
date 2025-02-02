@@ -1,35 +1,43 @@
 /*Reset.css*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html, body {
-    height: 100%;
-  }
+html,
+body {
+  height: 100%;
+}
 
-  input, select, textarea {
-    max-width: 100%;
-  }
+input,
+select,
+textarea {
+  max-width: 100%;
+}
 
-  ul, ol {
-    list-style: none;
-  }
+ul,
+ol {
+  list-style: none;
+}
 
-  table {
-    border-collapse: separate;
-    border-spacing: 0;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  body {
-    background-color: var(--c-background-color);
-    font-family: 'Grandstander Variable', sans-serif;
-  }
- 
-  
-  
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: var(--c-background-color);
+  font-family: 'Grandstander Variable', sans-serif;
+}
+button {
+  font-family: 'poppins';
+  font-size: var(--fs-medium);
+  color: var(--c-secondary-color);
+  background-color: var(--c-accent-color);
+  border-color: var(--c-accent-color);
+}
