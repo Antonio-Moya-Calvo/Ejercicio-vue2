@@ -1,5 +1,5 @@
-import '@/assets/styles.css/reset.scss'
-import '@/assets/styles.css/variables.scss'
+import '@/assets/styles.scss/reset.scss'
+import '@/assets/styles.scss/variables.scss'
 import '@fontsource-variable/grandstander'
 import '@fontsource/poppins';
 import { createApp } from 'vue'

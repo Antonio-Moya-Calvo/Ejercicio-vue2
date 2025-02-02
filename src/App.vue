@@ -1,5 +1,6 @@
+<script lang="ts" setup>
+import TheTitle from './components/TheTitle.vue';
+</script>
 <template>
-    <h1 class="encabezado">
-        Hola mundo
-    </h1>
+    <TheTitle></TheTitle>
 </template>
