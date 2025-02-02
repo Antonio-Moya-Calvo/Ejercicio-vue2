@@ -18,12 +18,16 @@ function decremet() {
     >
     <p class="counter__value">{{ contador }}</p>
     <p class="counter__increment">
-      <button @click="increment" class="counter__increment-button">
+      <button v-if="contador < 10" @click="increment" class="counter__increment">
         Incrementar el valor en 1
       </button>
+      <span v-else class="counter__alerta">Has sobrepasado el valor Máximo</span>
     </p>
     <p class="counter__decrement">
-      <button @click="decremet" class="counter__decrement-button">Decrementar el valor en 1</button>
+      <button v-if="contador >= 0" @click="decremet" class="counter__decrement">
+        Decrementar el valor en 1
+      </button>
+      <span v-else class="counter__alerta">Has sobrepasado el valor Mínimo</span>
     </p>
   </section>
 </template>
@@ -46,6 +50,10 @@ function decremet() {
   }
   &__decrement {
     margin: 2em 2em;
+  }
+  &__alerta {
+    color: var(--c-red);
+    font-size: var(--fs-extra-big);
   }
 }
 </style>
